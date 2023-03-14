@@ -1,6 +1,4 @@
-* {
-    background-color:#FAF5DF;
-} 
+
 /* COLOR PALLETE
 WHITE: #F3F4F0,
 BEIGE: #FAF5DF,
@@ -8,13 +6,41 @@ PASTEL GREEN: #C4D2C6,
 DARKER PASTEL GREEN: #A5B49E,
 DARK GREEN: #7A8C6B
 */
-/* Buttong settings */
-.btn {
-    background-color: #A5B49E;
-    color: white;
+
+/* GENERAL SETTINGS */
+/* Structure settings */
+section {
+    padding: 0 0 10% 0;
+}
+
+.banner {
+    padding: 0;
+}
+
+.footer {
+    padding: 0;
+}
+
+.guest-info {
+    padding: 0 5%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    padding: 5% 0;
 }
 
 /* Text settings */
+.bold {
+    font-family: 'Raleway';
+    font-size: 250%;
+    font-weight: 600;
+    color: #40513B;
+}
+
 .container-fluid {
     text-align: justify;
 }
@@ -24,19 +50,6 @@ DARK GREEN: #7A8C6B
     font-size: 75%;
     font-weight: 300;
     padding: 5% 0 0;
-}
-
-.bold {
-    font-family: 'Raleway';
-    font-size: 250%;
-    font-weight: 600;
-    color: #40513B;
-}
-
-.semi-bold {
-    font-family: 'Raleway';
-    font-size: 250%;
-    font-weight: 300;
 }
 
 .cursive {
@@ -57,14 +70,29 @@ p {
     font-weight: 300;
 }
 
-/* Image settings */
-img {
-    width: 100%;
-    height: auto;
+.semi-bold {
+    font-family: 'Raleway';
+    font-size: 250%;
+    font-weight: 300;
 }
+
+/* GRAPHICS SETTINGS */
+/* Image settings */
+#banner-photo {
+    padding: 0;     
+}
+
+body {
+    background-color:#FAF5DF;
+} 
 
 #canvas1, #canvas2, #canvas3 {
     padding: 0 1%;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .photo {
@@ -77,34 +105,10 @@ i {
     color: #40513B;
 }
 
-/* Structure settings */
-.banner {
-    padding: 0;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-.row {
-    padding: 5% 0;
-}
-
-section {
-    padding: 0 0 10% 0;
-}
-
-.guest-info {
-    padding: 0 5%;
-}
-
-.footer {
-    padding: 0;
-}
-
-/* Form settings */
-.my-form {
-    padding: 0 35%;
+/* Buttong settings */
+.btn {
+    background-color: #A5B49E;
+    color: white;
 }
 
 /* Countdown clock */
@@ -157,7 +161,12 @@ section {
     padding: 5% 0 50%;
   }
 
-  /* Phone settings */
+/* FORM SETTINGS */
+.my-form {
+    padding: 0 35%;
+}
+
+  /* PHONE SETTINGS */
   @media screen and (max-width: 768px) {
       /* Coutdown clock */
     .countdown .days .number,
