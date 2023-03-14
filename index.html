@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    
+    <!-- CSS stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Raleway:wght@300;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/90d209464a.js" crossorigin="anonymous"></script></head>
+<body>
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/banner.png" alt="banner-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WEDDING INFO + TIMER -->
+    <section class="wedding-info">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12">
+                    <p class="cursive">Estás invitado!</p>
+                    <p id="invitation">Queremos que seas parte <br> de este momento tan especial.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="countdown">
+                        <div class="days">
+                            <div class="number"></div>
+                            <div class="label">DIAS</div>
+                        </div>
+                        <div class="hours">
+                            <div class="number"></div>
+                            <div class="label">HORAS</div>
+                        </div>
+                        <div class="minutes">
+                            <div class="number"></div>
+                            <div class="label">MINUTOS</div>
+                        </div>
+                        <div class="seconds">
+                            <div class="number"></div>
+                            <div class="label">SEGUNDOS</div>
+                        </div>
+                    </div>
+                      
+                    <script>
+                        // Set the date to countdown to
+                        const countdownDate = new Date('2023-12-31T23:59:59').getTime();
+        
+                        // Update the countdown every second
+                        const countdownTimer = setInterval(() => {
+
+                        // Get the current date and time
+                        const now = new Date().getTime();
+        
+                        // Calculate the time remaining
+                        const timeRemaining = countdownDate - now;
+        
+                        // Calculate the days, hours, minutes, and seconds remaining
+                        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        
+                        // Update the countdown display
+                        document.querySelector('.days .number').textContent = days;
+                        document.querySelector('.hours .number').textContent = hours;
+                        document.querySelector('.minutes .number').textContent = minutes;
+                        document.querySelector('.seconds .number').textContent = seconds;
+        
+                        // If the countdown is finished, clear the interval
+                        if (timeRemaining <= 0) {
+                            clearInterval(countdownTimer);
+                        }
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <i class="fa-solid fa-champagne-glasses fa-4x"></i>
+                    <p class="bold">CEREMONIA & CELEBRACION</p>
+                    <p>Nombre del lugar de la boda</p>
+                    <p>Te esperamos</p>
+                    <p class="semi-bold"> 17 SEPT | 18:00 h</p>
+                    <p>Direcction del sitio de la boda</p>
+                    <a class="btn" href="#" role="button">VER UBICACION</a>
+                    <br>
+                    <br>
+                    <i class="fa-solid fa-shirt fa-4x"></i>
+                    <p class="bold">DRESSCODE</p>
+                    <p>No vestidos blancos, color champan o verde menta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PHOTOS -->
+    <section class="pictures">
+        <div class="container-fluid text-center">
+            <div class="row" id="canvas1">
+                <div class="col-6 photo">
+                    <img src="https://imgs.search.brave.com/SWg1Yo9M34nmsgg7W9yeD4wKVDEknGwtEsBz_v4vAJk/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzE4L2Qy/L2E3LzE4ZDJhNzY4/NjIwZmQ5N2FiZmIy/N2VjM2UwM2UxN2M3/LmpwZw" class="img-fluid" alt="forhead-smoochie">
+                </div>
+                <div class="col-6 photo">
+                    <img src="https://imgs.search.brave.com/tfr1waEAdpmCrut-xGr_9pt73av9X6vfaUQA9VhjFOU/rs:fit:600:900:1/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jdXRl/LWNvdXBsZS1odWdn/aW5nLXBhcmstc21p/bGluZy1lYWNoLW90/aGVyLXN1bm55LWRh/eS00MDY4ODkwNS5q/cGc" class="img-fluid" alt="side-hug">
+                </div>
+            </div>
+            <div class="row" id="canvas2">
+                <div class="col-12 photo">
+                    <img src="https://imgs.search.brave.com/fRM8hh8wXp0Ly8iVz0o22YkAP29kLMcYoxZAQPj7r3U/rs:fit:1200:867:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY2RuMS5zdG9j/a3VubGltaXRlZC5u/ZXQvcHJldmlldzEz/MDAvbG92aW5nLWNv/dXBsZS1odWdnaW5n/LXdoaWxlLXNpdHRp/bmctb24tc3RlcHMt/aW4tcGFyay1kdXJp/bmctYXV0dW1uXzE5/Mjc2NTkuanBn" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row" id="canvas3">
+                <div class="col-6 photo">
+                    <img src="https://imgs.search.brave.com/1DWd6ju30dAxMsyvebY7f81JN-xvg3pLeSLqtCOi568/rs:fit:685:960:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2NlLzVh/LzZiL2NlNWE2YmQw/MGY4ZTYyN2IwNjA5/M2E3MmIwMTM5NTEw/LmpwZw" class="img-fluid" alt="forhead-smoochie">
+                </div>
+                <div class="col-6 photo">
+                    <img src="https://imgs.search.brave.com/SQX8LZCGvHGuL_Vg-y8XrndG5F7KrwviOCY24XkiFFw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dW5pcXVlaWRlYXMu/c2l0ZS93cC1jb250/ZW50L3VwbG9hZHMv/Y3V0ZS1jb3VwbGVz/LXBob3RvZ3JhcGh5/LWlkZWFzLWNvdXBs/ZS1waWN0dXJlLWlk/ZWFzLXBpbnRlcmVz/dC5qcGc" class="img-fluid" alt="side-hug">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FORM -->
+    <section class="guest-info">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12">
+                    <i class="fa-solid fa-gift fa-4x"></i>
+                    <p class="bold">REGALOS</p>
+                    <p>Vuestra compañía y risas son el mejor regalo para nosotros, pero en caso de que queráis hacernos un regalo os agradecemos que sea efectivo en un sobre.</p>
+                    <i class="fa-regular fa-envelope fa-4x"></i>
+                    <p>Habrá un momento para la entrega de regalos</p>
+                </div>
+            </div>
+            <form class="row my-form g-3" action="https://script.google.com/macros/s/AKfycbyi73x0dIW64LQ9pJk0YYYOJU7YCJu58dzRBe_VW5Op5yMPfFV9ckpSENadmwgOiGe_jQ/exec" method="post">
+                <p class="bold">CONFIRMAR ASISTENCIA</p>
+                <p>Por favor, confirma tu asistencia</p>
+                <div class="col-12">
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-12">
+                    <select id="attendance" name="attendance" class="form-select" required>
+                      <option selected>Asistiré</option>
+                      <option>No asistiré</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <select id="menu" name="menu" class="form-select" required>
+                        <option selected>Normal</option>
+                        <option>Vegetarian@</option>
+                        <option>Vegan@</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="songs" name="songs" placeholder="Petición de canciones">
+                </div>
+                <div class="col-12 form-box">
+                    <button type="submit" class="btn">ENVIAR RESPUESTA</button>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-12">
+                    <p class="cursive">Te esperamos</p>
+                    <p class="handwritting">Stella y Franccesco</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Desarrollado por <a href="https://vladalbert.tech/">Rubber Turtle-Duck</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
