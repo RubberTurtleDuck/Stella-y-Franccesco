@@ -64,6 +64,13 @@ section {
     color: #40513B;
 }
 
+#invitation-title {
+    font-family: 'Raleway';
+    font-size: 150%;
+    font-weight: 600;
+    color: #40513B;
+}
+
 p {
     font-family: 'Raleway';
     font-size: 100%;
@@ -89,10 +96,17 @@ body {
 #canvas1, #canvas2, #canvas3 {
     padding: 0 1%;
 }
+#dresscode {
+    width: 15%;
+}
 
 img {
     width: 100%;
     height: auto;
+}
+
+#logo {
+    width: 70%;
 }
 
 .photo {
