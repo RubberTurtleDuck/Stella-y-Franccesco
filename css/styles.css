@@ -21,24 +21,37 @@ section {
     padding: 0;
 }
 
-.guest-info {
-    padding: 0 5%;
-}
-
 .container-fluid {
     padding: 0;
 }
 
 .row {
-    padding: 5% 0;
+    padding: 3% 0;
+}
+
+.thank-you {
+    padding: 5% 0 0;
 }
 
 /* Text settings */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 .bold {
     font-family: 'Raleway';
     font-size: 250%;
     font-weight: 600;
     color: #40513B;
+
+}
+
+#confirmation {
+    font-size: 150%;
 }
 
 .container-fluid {
@@ -49,13 +62,17 @@ section {
     font-family: 'Raleway';
     font-size: 75%;
     font-weight: 300;
-    padding: 5% 0 0;
+    padding: 0;
 }
 
 .cursive {
     font-family: 'Great Vibes';
     font-size: 300%;
     color: #7A8C6B;
+}
+
+#gift-request {
+    padding: 0 35%;
 }
 
 .handwritting {
@@ -79,8 +96,12 @@ p {
 
 .semi-bold {
     font-family: 'Raleway';
-    font-size: 250%;
+    font-size: 150%;
     font-weight: 300;
+}
+
+#spn-thanks {
+    font-size: 500%;
 }
 
 /* GRAPHICS SETTINGS */
@@ -105,12 +126,24 @@ img {
     height: auto;
 }
 
-#logo {
-    width: 70%;
+#dress-logo {
+    width: 100px;
+}
+
+#gift-logo {
+    width: 90px;
 }
 
 .photo {
     padding: 1%;
+}
+
+#thanks-wedding-logo {
+    width: 25%;
+}
+
+#wedding-logo {
+    width: 30%;
 }
 
 /* Icon settings */
@@ -182,6 +215,24 @@ i {
 
   /* PHONE SETTINGS */
   @media screen and (max-width: 768px) {
+    /* Structure */
+    .row {
+        padding: 10% 0;
+    }
+
+    .thank-you {
+        padding: 10% 0 0;
+    }
+
+    /* Text settings */
+    #gift-request {
+        padding: 0;
+    }
+
+    #confirmation {
+        font-size: 120%;;
+    }
+
       /* Coutdown clock */
     .countdown .days .number,
     .countdown .hours .number,
@@ -199,5 +250,14 @@ i {
     /* Form */
     .my-form {
         padding: 5%;
+    }
+
+    /* Graphics settings */
+    #wedding-logo {
+        width: 70%;
+    }
+
+    #thanks-wedding-logo {
+        width: 75%;
     }
   }

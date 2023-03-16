@@ -26,7 +26,7 @@
         <div class="container-fluid text-center">
             <div class="row" id="banner-photo">
                 <div class="col-12">
-                    <img src="images/banner.jpg" alt="banner-photo">
+                    <img src="images/banner.png" alt="banner-photo">
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-12">
-                    <p class="cursive">Franccesco y Stella</p>
+                    <p class="cursive">Stella y Franccesco</p>
                     <p id="invitation-title">ESTÁS INVITADO</p>
                     <p id="invitation">No podría ser el mejor día <br> de nuestra vida sin ti.</p>
                     <audio controls>
@@ -99,17 +99,23 @@
                     </script>
                 </div>
             </div>
+            <div class="row wed-logo-container">
+                <div class="col-12">
+                    <img src="images/logo.png" alt="logo" id="wedding-logo">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
-                    <img src="images/logo.png" alt="logo" id="logo" style="padding: 0 0 15% 0;">
                     <p class="bold">CEREMONIA & CELEBRACION</p>
                     <p>Finca Buenos Aires</p>
                     <p class="semi-bold"> 17 SEPT | 18:30 h</p>
                     <p>Cubas de la Sagra, Madrid, 28978</p>
                     <a class="btn" href="https://goo.gl/maps/GjYFes9CygpgMkQA7" role="button">VER UBICACION</a>
-                    <br>
-                    <br>
-                    <img src="images/dress.png" alt="dresscode" id="dresscode">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/dress.png" alt="dresscode" id="dress-logo">
                     <p class="bold">DRESSCODE</p>
                     <p>No vestidos blancos ni derivados.</p>
                 </div>
@@ -149,35 +155,39 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-12">
-                    <i class="fa-solid fa-gift fa-4x"></i>
+                    <img src="images/gift-logo.png" id="gift-logo">
                     <p class="bold">REGALOS</p>
-                    <p>Tu presencia es nuestro mayor regalo, pero si deseas obsequiarnos algo, te agradeceríamos mucho una contribución a nuestra nueva vida juntos.</p>
+                    <p id="gift-request">Tu presencia es nuestro mayor regalo, pero si deseas obsequiarnos algo, te agradeceríamos mucho una contribución a nuestra nueva vida juntos.</p>
                     <button class="btn" onclick="replaceButton()">DATOS BANCARIOS</button>
                     <script>
                         function replaceButton() {
                         var button = document.getElementsByTagName("button")[0]; // get the button element
-                        var paragraph = document.createElement("p"); // create a new p element
-                        paragraph.textContent = "IBAN: ES27 0073 0100 5004 8479 9379 Bizum: 638 84 34 48"; // set the text content of the p element
-                        button.parentNode.replaceChild(paragraph, button); // replace the button element with the p element
+                        var paragraph1 = document.createElement("p"); // create a new p element
+                        paragraph1.textContent = "IBAN: ES27 0073 0100 5004 8479 9379"; // set the text content of the first p element
+                        var paragraph2 = document.createElement("p"); // create another new p element
+                        paragraph2.textContent = "Bizum: 638 84 34 48"; // set the text content of the second p element
+                        button.parentNode.replaceChild(paragraph1, button); // replace the button element with the first p element
+                        paragraph1.insertAdjacentElement('afterend', paragraph2); // insert the second p element after the first p element
                         }
                     </script>
                 </div>
             </div>
-            <form class="row my-form g-3" action="https://script.google.com/macros/s/AKfycbyi73x0dIW64LQ9pJk0YYYOJU7YCJu58dzRBe_VW5Op5yMPfFV9ckpSENadmwgOiGe_jQ/exec" method="post">
+            <form class="row my-form g-4" action="https://script.google.com/macros/s/AKfycbyi73x0dIW64LQ9pJk0YYYOJU7YCJu58dzRBe_VW5Op5yMPfFV9ckpSENadmwgOiGe_jQ/exec" method="post">
                 <p class="bold">CONFIRMAR ASISTENCIA</p>
-                <p>Por favor, confirma tu asistencia</p>
+                <p>Por favor, confirma tu asistencia <br> antes del 17 de Junio</p>
                 <div class="col-12">
                     <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" required>
                 </div>
                 <div class="col-12">
                     <select id="attendance" name="attendance" class="form-select" required>
-                      <option selected>Asistiré</option>
+                      <option disabled selected>Asistencia</option>
+                      <option>Asistiré</option>
                       <option>No asistiré</option>
                     </select>
                 </div>
                 <div class="col-12">
                     <select id="menu" name="menu" class="form-select" required>
-                        <option selected>Menú</option>
+                        <option disabled selected>Menú</option>
                         <option>Carne</option>
                         <option>Pescado</option>
                         <option>Vegetariano</option>
@@ -187,13 +197,13 @@
                     <input type="text" class="form-control" id="songs" name="songs" placeholder="Petición de canciones">
                 </div>
                 <div class="col-12 form-box">
-                    <button type="submit" class="btn">ENVIAR RESPUESTA</button>
+                    <button type="submit" class="btn"><a href="thank-you.html">ENVIAR RESPUESTA</a></button>
                 </div>
             </form>
             <div class="row">
                 <div class="col-12">
                     <p class="cursive">Te esperamos</p>
-                    <p class="handwritting">Franccesco y Stella</p>
+                    <p class="handwritting">Stella y Franccesco</p>
                 </div>
             </div>
         </div>
