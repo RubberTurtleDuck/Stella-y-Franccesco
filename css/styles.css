@@ -102,6 +102,11 @@ body {
     background-color:#FAF5DF;
 } 
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }  
+
 #canvas1, #canvas2, #canvas3 {
     padding: 0 1%;
 }
