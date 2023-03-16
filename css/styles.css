@@ -29,10 +29,6 @@ section {
     padding: 3% 0;
 }
 
-.thank-you {
-    padding: 5% 0 0;
-}
-
 /* Text settings */
 a {
     text-decoration: none;
@@ -48,10 +44,6 @@ a:visited {
     font-weight: 600;
     color: #40513B;
 
-}
-
-#confirmation {
-    font-size: 150%;
 }
 
 .container-fluid {
@@ -100,10 +92,6 @@ p {
     font-weight: 300;
 }
 
-#spn-thanks {
-    font-size: 500%;
-}
-
 /* GRAPHICS SETTINGS */
 /* Image settings */
 #banner-photo {
@@ -136,10 +124,6 @@ img {
 
 .photo {
     padding: 1%;
-}
-
-#thanks-wedding-logo {
-    width: 25%;
 }
 
 #wedding-logo {
@@ -220,17 +204,9 @@ i {
         padding: 10% 0;
     }
 
-    .thank-you {
-        padding: 10% 0 0;
-    }
-
     /* Text settings */
     #gift-request {
         padding: 0;
-    }
-
-    #confirmation {
-        font-size: 120%;;
     }
 
       /* Coutdown clock */
